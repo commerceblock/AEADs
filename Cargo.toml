@@ -12,9 +12,9 @@ members = [
 ]
 
 [patch.crates-io]
-aes = { git = "https://github.com/RustCrypto/block-ciphers.git" }
+aes = { git = "https://github.com/mesalock-linux/rustcrypto-block-ciphers-sgx.git" }
 chacha20 = { git = "https://github.com/RustCrypto/stream-ciphers.git" }
-cmac = { git = "https://github.com/RustCrypto/MACs.git" }
+cmac = { git = "https://github.com/mesalock-linux/rustcrypto-MACs-sgx.git" }
 ghash = { git = "https://github.com/RustCrypto/universal-hashes.git" }
 kuznyechik = { git = "https://github.com/RustCrypto/block-ciphers.git" }
 pmac = { git = "https://github.com/RustCrypto/MACs.git" }

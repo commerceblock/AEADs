@@ -16,12 +16,12 @@ keywords = ["aead", "aes", "encryption", "gcm", "ghash"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-aead = { version = "0.4", default-features = false }
-aes = { version = "=0.7.0-pre", optional = true }
-cipher = "=0.3.0-pre.4"
-ctr = "=0.7.0-pre.3"
-ghash = { version = "=0.4.0-pre", default-features = false }
-subtle = { version = "2", default-features = false }
+aead = { git = "https://github.com/mesalock-linux/rustcrypto-traits-sgx.git" default-features = false }
+aes = { git = "https://github.com/mesalock-linux/rustcrypto-block-ciphers-sgx.git" }
+cipher = { git = "https://github.com/mesalock-linux/rustcrypto-traits-sgx.git" }
+ctr = { git = https://github.com/mesalock-linux/rustcrypto-stream-ciphers-sgx }
+ghash = { git = "https://github.com/commerceblock/universal-hashes.git" }
+subtle = { git = "https://github.com/mesalock-linux/subtle-sgx.git", tag = "sgx_1.1.3" }
 zeroize = { version = "1", optional = true, default-features = false }
 
 [dev-dependencies]
